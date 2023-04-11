@@ -1,0 +1,10 @@
+<div class="header">
+    <div class="title">
+        <h1>SPRING EXCHANGE RATES</h1>
+    </div>
+    <div class="buttons">
+        <button *ngIf="GetLoggedIn() === 'false'" (click)="OpenLoginDialog();" class="buttons-button btn btn-primary">Log In</button>
+        <button *ngIf="GetLoggedIn() === 'false'" (click)="OpenRegisterDialog();" class="buttons-button btn btn-primary">Register</button>
+        <button *ngIf="GetLoggedIn() === 'true'" (click)="LogOut();" class="buttons-button btn btn-primary">Log out</button>
+    </div>
+</div>

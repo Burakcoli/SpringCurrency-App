@@ -1,0 +1,25 @@
+<div class="home" style=" width: 80vw;">
+    <ngb-datepicker id="date-input" (dateSelect)="onDateSelect($event)"></ngb-datepicker>
+
+    <h2 class="dateInfo">Exchange Rates for {{dateOfExchangeRates}}</h2>
+
+    <table class="table table-hover table-dark" style="margin-top:1em;">
+        <thead>
+            <tr class="table-light">
+                <th style="text-align:start">Currency Code</th>
+                <th>Currency Name</th>
+                <th>Forex Buying</th>
+                <th style="text-align:end">Forex Selling</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: center;" *ngFor="let exchangeRate of exchangeRates">
+                    <td style="text-align:start">{{ exchangeRate?.code }}</td>
+                    <td>{{ exchangeRate?.name }}</td>
+                    <td>{{ exchangeRate?.buying }}₺</td>
+                    <td style="text-align: end;">{{ exchangeRate?.selling }}₺</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</div>

@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.form-component{
+    width: 30vw;
+    padding: 2rem;
+    text-align: center;
+}
+
+.form-title{
+    font-weight: bold;
+    font-size: large;
+}
+
+.form-component button{
+    margin-top: 1rem;
+}
+
+.form-component .form-div{
+    margin-top: 1rem;
+}

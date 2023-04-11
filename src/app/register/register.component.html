@@ -1,0 +1,29 @@
+<div class="form-component">
+    <div class="modal-header">
+		<h2 class="modal-title form-title" id="modal-basic-title">Register</h2>
+		<button type="button" class="btn-close" aria-label="Close" (click)="CloseDialog();"></button>
+	</div>
+    <form class="form-group form-class">
+        <div class="errors">
+            <ul>
+                <li *ngFor="let error of errorMessages">
+                    <span style="color:red">{{error}}</span>
+                </li>
+            </ul>
+        </div>
+      <div class="form-div">
+        <label for="username">Username:</label>
+        <input class="form-control" type="text" id="username" name="username" [(ngModel)]="username">
+      </div>
+      <div class="form-div">
+        <label for="password">Password:</label>
+        <input class="form-control"  type="password" id="password" name="password" [(ngModel)]="password">
+      </div>
+      <div class="form-div">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input class="form-control"  type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="confirmPassword">
+      </div>
+      <button class="btn btn-primary"  type="submit" (click)="register()">Submit</button>
+    </form>
+    
+</div>
