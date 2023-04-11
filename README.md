@@ -1,27 +1,30 @@
-# CurrenyAngular
+CurrenyApp
+================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+General Info
+------------
+> Currency App is a fullstack web application used to retrieve exchange rate info from TCMB.<br>
+> Using: Angular, RestAPI, Spring Boot, JPA, PostgreSQL
 
-## Development server
+### Features
+* POST and GET requests for -Login, Register-
+* See exchange rates data from TCMB for any date selected
+* SQL Database system using PostgreSQL, JPA
+* Responsive Design for both Web and Mobile
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Installation
+- Refer to the Backend repository of this app to get the backend running. https://github.com/Burakcoli/SpringCurrency
+- NodeJS and angular-cli to be installed.
+- Open VS code with corresponding downloaded folder
+- In VS code open Integrated command prompt/terminal
+- run npm install command
+- run ng serve command
+- On your browser go to the url: http://localhost:4200
 
-## Code scaffolding
+### Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> Home Page<br> ![Home](WebAppScreenshots/1.png) <br>
+> Exchange Rates <br> ![Exchange Rates](WebAppScreenshots/5.png) <br>
+> Register <br> ![Register](WebAppScreenshots/2.png) <br>
+> Register Validation<br> ![Register Validation](WebAppScreenshots/3.png) <br>
+> Error on Unavailable Days<br> ![Error](WebAppScreenshots/4.png) <br>
